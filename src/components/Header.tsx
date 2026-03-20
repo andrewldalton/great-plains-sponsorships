@@ -42,8 +42,8 @@ export default function Header() {
               <Image
                 src="/images/gps-logo.png"
                 alt="Great Plains Sponsorships"
-                width={60}
-                height={60}
+                width={70}
+                height={70}
                 className="group-hover:scale-105 transition-transform"
                 priority
               />
