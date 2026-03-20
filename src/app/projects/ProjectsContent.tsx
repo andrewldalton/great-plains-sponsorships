@@ -124,11 +124,11 @@ const projects = [
   // === FEATURED ===
   {
     name: "Youth Sports Naming Rights",
-    location: "Midwest",
+    location: "Omaha, NE",
     value: "2-Year Contract",
     category: "Naming Rights",
     description:
-      "Secured jersey naming rights for a 3,000+ member youth sports organization. Now seeking a partner for naming rights on the fields and complexes — an opportunity to put your brand front and center in the community.",
+      "Secured jersey naming rights for a 3,000+ member Omaha youth sports organization. Now seeking a partner for naming rights on the fields and complexes — an opportunity to put your brand front and center in the community.",
     icon: Handshake,
     color: "from-gps-green-light to-gps-green",
     highlights: [
