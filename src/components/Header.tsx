@@ -17,7 +17,7 @@ const navItems = [
   { name: "Services", href: "/services", dropdown: services },
   { name: "Projects", href: "/projects" },
   { name: "Who We Serve", href: "/who-we-serve" },
-  { name: "Calculator", href: "/calculator" },
+  { name: "ROI Calculator", href: "/calculator" },
   { name: "About", href: "/about" },
   { name: "Contact", href: "/contact" },
 ];
@@ -152,13 +152,13 @@ export default function Header() {
                     {item.name}
                   </Link>
                   {item.dropdown && (
-                    <div className="flex flex-wrap justify-center gap-x-4 gap-y-1 mt-1 mb-1">
+                    <div className="flex flex-col items-center gap-2 mt-2 mb-1">
                       {item.dropdown.map((sub) => (
                         <Link
                           key={sub.name}
                           href={sub.href}
                           onClick={() => setMobileOpen(false)}
-                          className="text-xs text-white/40 hover:text-gps-gold transition-colors"
+                          className="text-base text-white/60 hover:text-gps-gold transition-colors"
                         >
                           {sub.name}
                         </Link>

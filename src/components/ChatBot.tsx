@@ -294,10 +294,10 @@ steps.contact = () => [
         <div className="flex items-center gap-2">
           <Mail size={14} className="text-gps-green shrink-0" />
           <a
-            href="mailto:Ryan.Querry@GreatPlainsSponsorships.com"
+            href="mailto:andrew.dalton@greatplainssponsorships.com"
             className="underline text-gps-green font-medium break-all"
           >
-            Ryan.Querry@GreatPlainsSponsorships.com
+            andrew.dalton@greatplainssponsorships.com
           </a>
         </div>
       </div>
@@ -372,7 +372,7 @@ export default function ChatBot() {
   // Don't render on the contact page
   if (pathname === "/contact") return null;
 
-  return <ChatBotInner router={router} />;
+  return <ChatBotInner key="chatbot" router={router} />;
 }
 
 function ChatBotInner({
@@ -415,41 +415,33 @@ function ChatBotInner({
       const botMsgs = msgs.filter((m) => m.type === "bot");
       if (botMsgs.length === 0) return;
 
-      let idx = 0;
-      const deliverNext = () => {
-        if (idx >= botMsgs.length) {
-          setIsTyping(false);
-          return;
-        }
-        setIsTyping(true);
-        typingTimeoutRef.current = setTimeout(() => {
-          setMessages((prev) => [...prev, botMsgs[idx]]);
-          idx++;
-          if (idx < botMsgs.length) {
-            deliverNext();
-          } else {
-            setIsTyping(false);
-          }
-        }, delay);
-      };
-      deliverNext();
+      botMsgs.forEach((msg, i) => {
+        const timer = setTimeout(() => {
+          if (i === 0) setIsTyping(true);
+          setTimeout(() => {
+            setMessages((prev) => [...prev, msg]);
+            if (i === botMsgs.length - 1) setIsTyping(false);
+          }, delay);
+        }, i * delay);
+      });
     },
     []
   );
 
-  // Initial greeting with delay on first open
+  // Initial greeting on first open
+  const greetingFired = useRef(false);
   useEffect(() => {
-    if (isOpen && !hasOpened) {
-      setHasOpened(true);
-      const timer = setTimeout(() => {
-        const msgs = steps.start({});
-        deliverMessages(msgs, 1500);
-      }, 3000);
-      return () => clearTimeout(timer);
-    } else if (isOpen && messages.length === 0) {
+    if (!isOpen || greetingFired.current) return;
+    greetingFired.current = true;
+
+    const initialDelay = hasOpened ? 0 : 1500;
+    setHasOpened(true);
+
+    const timer = setTimeout(() => {
       const msgs = steps.start({});
       deliverMessages(msgs, 1200);
-    }
+    }, initialDelay);
+    return () => clearTimeout(timer);
     // eslint-disable-next-line react-hooks/exhaustive-deps
   }, [isOpen]);
 
