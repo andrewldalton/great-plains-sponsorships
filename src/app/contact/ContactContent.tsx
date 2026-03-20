@@ -270,7 +270,7 @@ export default function ContactContent() {
 
                   <div className="space-y-6">
                     <a
-                      href="mailto:andrew.dalton@greatplainssponsorships.com"
+                      href="mailto:Ryan.Querry@GreatPlainsSponsorships.com"
                       className="flex items-start gap-4 group"
                     >
                       <div className="w-12 h-12 rounded-xl bg-gps-green/10 flex items-center justify-center flex-shrink-0 group-hover:bg-gps-green transition-colors">
@@ -281,7 +281,7 @@ export default function ContactContent() {
                           Email
                         </p>
                         <p className="text-sm text-gps-gray group-hover:text-gps-green transition-colors">
-                          andrew.dalton@greatplainssponsorships.com
+                          Ryan.Querry@GreatPlainsSponsorships.com
                         </p>
                       </div>
                     </a>
