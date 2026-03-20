@@ -14,7 +14,6 @@ import {
   Landmark,
   Dumbbell,
   Truck,
-  Eye,
   Handshake,
   Quote,
   Theater,
@@ -213,6 +212,7 @@ const projects = [
       "Naming rights, sponsorships, and pouring rights for $35M indoor sporting facility in Grand Island, NE.",
     icon: DollarSign,
     color: "from-gps-gold to-yellow-700",
+    image: "/images/projects/pinnacle-bank.jpg",
     highlights: [
       "$35M indoor facility",
       "Full naming rights package",
@@ -473,21 +473,6 @@ const projects = [
       "Naming rights",
       "Hockey program sponsorship",
       "IceCats partnership",
-    ],
-  },
-  {
-    name: "I SEE It",
-    location: "Midwest",
-    value: "Partnership",
-    category: "Mission-Driven",
-    description:
-      "Creative sponsorship development connecting corporate partners with mission-driven initiatives — proof that GPS handles purpose-driven projects with the same intensity as large-scale venues.",
-    icon: Eye,
-    color: "from-violet-500 to-purple-700",
-    highlights: [
-      "Mission-driven sponsorship",
-      "Corporate partnership",
-      "Community impact",
     ],
   },
   // === EXPERIENCE (via Legends Global Sales) ===

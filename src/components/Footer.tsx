@@ -24,7 +24,7 @@ export default function Footer() {
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-12">
           {/* Brand */}
           <div className="lg:col-span-1">
-            <div className="flex items-center gap-3 mb-4">
+            <Link href="/" className="flex items-center gap-3 mb-4">
               <Image
                 src="/images/gps-logo.png"
                 alt="Great Plains Sponsorships"
@@ -38,7 +38,7 @@ export default function Footer() {
                   Sponsorships
                 </span>
               </div>
-            </div>
+            </Link>
             <p className="text-white/60 text-sm leading-relaxed mt-4">
               Midwestern work-ethic meets big-city results. We create profitable,
               sustainable sponsorship platforms for forward-thinking organizations.
