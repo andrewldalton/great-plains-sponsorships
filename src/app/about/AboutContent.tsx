@@ -20,7 +20,7 @@ const teamMembers = [
       "Over 20 years of experience in sales-execution and management",
       "Career sales and transactions exceeding $300 million",
       "NFL & NHL consulting experience; award-winning event centers and internationally-renowned events",
-      "Currently VP of Development at Omaha Children's Museum",
+      "Currently Vice President of Membership Development at NE Chamber",
       "York College & Bellevue University graduate",
       "Board member of Susan G. Komen; resides in Omaha with wife Jen and children Harper & Nash",
     ],
@@ -48,7 +48,7 @@ const teamMembers = [
     title: "Director of Strategic Partnerships",
     initials: "BS",
     color: "bg-gps-green-light",
-    photo: null,
+    photo: "/images/blake-schmida.jpeg",
     bio: [
       "University of Nebraska-Lincoln graduate — Journalism, Advertising & Public Relations",
       "Former Advisor with Bob Feller Act of Valor Foundation",
