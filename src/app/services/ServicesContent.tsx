@@ -54,6 +54,7 @@ const namingRightsServices = [
   { icon: BarChart3, text: "Onsite Sales Training" },
   { icon: Medal, text: "Athlete Endorsements" },
   { icon: Music, text: "Concert / Performing-Act Sponsors" },
+  { icon: CheckSquare, text: "Jersey Naming Rights" },
 ];
 
 const ownerRepServices = [

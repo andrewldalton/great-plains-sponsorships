@@ -128,13 +128,13 @@ const projects = [
     value: "2-Year Contract",
     category: "Naming Rights",
     description:
-      "Secured naming rights sponsorship for a youth sports organization on a 2-year contract. Currently seeking partners for naming fields and complexes — an opportunity to put your brand front and center in the community.",
+      "Secured jersey naming rights for a 3,000+ member youth sports organization. Now seeking a partner for naming rights on the fields and complexes — an opportunity to put your brand front and center in the community.",
     icon: Handshake,
     color: "from-gps-green-light to-gps-green",
     highlights: [
-      "2-year naming rights deal",
-      "Fields & complex naming",
-      "Seeking naming partner",
+      "3,000+ member organization",
+      "Jersey naming rights secured",
+      "Fields & complex partner sought",
     ],
     featured: true,
   },
