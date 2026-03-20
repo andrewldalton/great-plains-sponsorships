@@ -280,7 +280,7 @@ export default function ContactContent() {
                         <p className="text-sm font-semibold text-gps-slate">
                           Email
                         </p>
-                        <p className="text-sm text-gps-gray group-hover:text-gps-green transition-colors">
+                        <p className="text-sm text-gps-gray group-hover:text-gps-green transition-colors break-all">
                           Ryan.Querry@GreatPlainsSponsorships.com
                         </p>
                       </div>
