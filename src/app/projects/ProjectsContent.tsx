@@ -156,22 +156,6 @@ const projects = [
     ],
   },
   {
-    name: "MD West One Sports Complex",
-    location: "Valley, NE",
-    value: "$23M+",
-    category: "Healthcare & Sports",
-    description:
-      "Naming rights, sponsorships, and pouring rights for new 142-acre, $23M+ multiuse sports complex going up in Valley, NE for the Elkhorn Athletics Association.",
-    icon: Landmark,
-    color: "from-blue-600 to-blue-800",
-    image: "/images/projects/md-west-one.jpg",
-    highlights: [
-      "142-acre facility",
-      "Elkhorn Athletics Association",
-      "Full naming rights & pouring rights",
-    ],
-  },
-  {
     name: "ETOWAH Mega Sports Complex",
     location: "Southeast",
     value: "Major",
