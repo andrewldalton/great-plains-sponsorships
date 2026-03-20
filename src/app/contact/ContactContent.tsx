@@ -36,15 +36,26 @@ export default function ContactContent() {
     setErrorMsg("");
 
     try {
-      const res = await fetch("/api/contact", {
+      const res = await fetch("https://formsubmit.co/ajax/andrew.dalton@greatplainssponsorships.com", {
         method: "POST",
-        headers: { "Content-Type": "application/json" },
-        body: JSON.stringify(formData),
+        headers: {
+          "Content-Type": "application/json",
+          Accept: "application/json",
+        },
+        body: JSON.stringify({
+          name: formData.name,
+          email: formData.email,
+          phone: formData.phone,
+          organization: formData.organization,
+          "Organization Type": formData.orgType,
+          message: formData.message,
+          _subject: `New GPS Inquiry from ${formData.organization || formData.name}`,
+          _template: "table",
+        }),
       });
 
       if (!res.ok) {
-        const data = await res.json();
-        throw new Error(data.error || "Something went wrong");
+        throw new Error("Something went wrong");
       }
 
       setStatus("success");
@@ -54,7 +65,7 @@ export default function ContactContent() {
       });
     } catch (err) {
       setStatus("error");
-      setErrorMsg(err instanceof Error ? err.message : "Something went wrong");
+      setErrorMsg(err instanceof Error ? err.message : "Something went wrong. Please email us directly.");
     }
   };
 
