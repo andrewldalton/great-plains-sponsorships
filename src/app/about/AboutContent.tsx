@@ -29,7 +29,7 @@ const teamMembers = [
   },
   {
     name: "Andrew Dalton",
-    title: "Business Development",
+    title: "EVP Partnerships",
     initials: "AD",
     color: "bg-gps-gold",
     photo: null,
