@@ -7,7 +7,7 @@ export function LocalBusinessSchema() {
       "Midwest-based sponsorship experts creating profitable, sustainable naming rights and corporate partnerships for sports complexes, municipalities, nonprofits, and entertainment venues.",
     url: "https://greatplainssponsorships.com",
     telephone: "+1-402-657-8170",
-    email: "Ryan.Querry@GreatPlainsSponsorships.com",
+    email: "andrew.dalton@greatplainssponsorships.com",
     address: {
       "@type": "PostalAddress",
       streetAddress: "18919 Margo St.",
