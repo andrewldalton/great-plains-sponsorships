@@ -32,7 +32,7 @@ const teamMembers = [
     title: "EVP Partnerships",
     initials: "AD",
     color: "bg-gps-gold",
-    photo: null,
+    photo: "/images/andrew-dalton.jpg",
     bio: [
       "Current Employee Benefits Consultant",
       "20+ years in sales, business consulting, and management",
