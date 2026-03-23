@@ -34,11 +34,11 @@ const teamMembers = [
     color: "bg-gps-gold",
     photo: "/images/andrew-dalton.jpg",
     bio: [
-      "Current Employee Benefits Consultant",
       "20+ years in sales, business consulting, and management",
       "Board member of youth sports organization in Omaha",
       "Creighton Prep / College of the Ozarks",
       "Passionate about youth sports and community impact",
+      "Current Employee Benefits Consultant",
     ],
     quote: null,
   },
